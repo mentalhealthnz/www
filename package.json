@@ -1,30 +1,30 @@
 {
-  "name": "aklcss",
+  "name": "mentalhealthnz website",
   "version": "0.0.1",
-  "description": "Website for Auckland CSS",
+  "description": "Website for Mental Health in Tech NZ",
   "main": "index.js",
   "scripts": {
     "http": "npm run build && cd dist && python -m SimpleHTTPServer",
     "build:css": "rework-npm src/css/main.css | cleancss -o dist/css/main.css",
     "build:copy": "cp src/*.html dist/",
     "build": "npm run build:css && npm run build:copy",
-    "publish": "cd dist && rm -rf .git && git init && git add . && git commit -m 'deploy' && git push --force --quiet 'git@github.com:aklcss/www.git' master:gh-pages"
+    "publish": "cd dist && rm -rf .git && git init && git add . && git commit -m 'deploy' && git push --force --quiet 'git@github.com:mentalhealthnz/www.git' master:gh-pages"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/aklcss/www.git"
+    "url": "git+ssh://git@github.com:mentalhealthnz/www.git"
   },
   "keywords": [
     "website",
     "auckland",
-    "css"
+    "mental health"
   ],
   "author": "Navishkar Rao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aklcss/www/issues"
+    "url": "https://github.com/mentalhealthnz/www/issues"
   },
-  "homepage": "https://github.com/aklcss/www#readme",
+  "homepage": "https://github.com/mentalhealthnz/www#readme",
   "devDependencies": {
     "clean-css": "^3.4.21",
     "rework-npm": "^1.0.0",
