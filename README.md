@@ -1,2 +1,2 @@
 # www
-[Website for Mental Health in Tech NZ](mentalhealthnz.github.io/www/)
+[Website for Mental Health in Tech NZ](https://mentalhealthnz.github.io/www/)
