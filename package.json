@@ -7,7 +7,7 @@
     "http": "npm run build && cd dist && python -m SimpleHTTPServer",
     "build:css": "rework-npm src/css/main.css -o dist/css/main.css",
     "build:copy": "cp src/*.html dist/ && cp -r src/img dist/ && cp CNAME dist/",
-    "build": "mkdir ./dist && npm run build:css && npm run build:copy",
+    "build": "mkdir -p ./dist && npm run build:css && npm run build:copy",
     "publish": "cd dist && rm -rf .git && git init && git add . && git commit -m 'deploy' && git push --force --quiet 'git@github.com:mentalhealthnz/www.git' master:gh-pages"
   },
   "repository": {
