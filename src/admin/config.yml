@@ -1,0 +1,4 @@
+backend:
+    name: github
+    repo: mentalhealthnz/www
+    branch: master
